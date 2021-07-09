@@ -27,6 +27,38 @@ public class HelloSprint6 {
 			
 		}
 		
+		WebElement text = driver.findElement(By.xpath("//*[@adem = 'Yildiz']")); 
+		
+		String actualText = text.getText(); // "2005"
+		
+		WebElement nextText = driver.findElement(By.xpath("//*[@adem = 'Yildiz1']"));
+		
+		String actualNextText = text.getText(); // "2006"
+		
+		nextText should be one more then text...
+		
+		int actualTextInt = Integer.parseInt(actualText); // 2005
+		
+		int actualnextTextInt = Integer.parseInt(actualNextText); // 2006
+		
+		// "2005"=="2005"
+	
+		if(actualTextInt == actualnextTextInt-1) {
+			System.out.println("Passed");
+			
+		}else {
+			System.out.println("Failed");
+			
+		}
+		
+		System.out.println("This is the last Job I did");
+		
+		
+	
+		
+		
+		
+		
 
 	}
 
