@@ -3,7 +3,7 @@ package Package;
 public class AdemClass {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println("This class comes from Adem Branch");
 
 	}
 
